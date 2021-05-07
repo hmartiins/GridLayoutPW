@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>PW</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1.5fr 2.5fr;
+      grid-template-rows: 10vh 20vh 60vh 10vh;
+      grid-template-areas: "menu menu" "header header" "main div" "footer footer";
+    }
+    menu {
+      background: rgb(2,0,36);
+background: linear-gradient(148deg, rgba(2,0,36,1) 0%, rgba(9,38,121,1) 40%, rgba(0,212,255,1) 100%);
+      grid-area: menu;
+    }
+    header {
+      background-color: orange;
+      grid-area: header;
+    }
+    main {
+      background-color: purple;
+      grid-area: main;
+    }
+    div {
+      background-color: green;
+      grid-area: div;
+    }
+    footer {
+      color: white;
+      background-color: black;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <H1></H1>
+    <menu>
+      menu
+    </menu>
+    <header>
+      header
+    </header>
+    <main>
+      sidebar
+    </main>
+    <div>
+      content
+    </div>
+    <footer>
+      footer
+    </footer>
+  </div>
+</body>
+</html>
